@@ -1,36 +1,166 @@
-/* Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-/* Setting up CSS variables */
-:root {
-  --primary-color: #313E50;
-  --secondary-color: #3a435e;
-  --accent1-color: #455561;
-  --accent2-color: #5C6672;
-
-  --heading-font: 'Roboto', serif;
-  --paragraph-font: 'Roboto', sans-serif;
-
-  --nav-background-color: var(--secondary-color);
-  --nav-link-color: #ede7d9;
-  --nav-hover-color: #6C6F7F;
-  --nav-hover-link-color: #A49694;
-  --nav-hover-background-color: #EDE7D9;
-}
-
-/* Styling headings and paragraphs */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-p {
-    font-family: var(--paragraph-font);
-    color: var(--secondary-color);
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
 }
 
 
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #174E70;
+    color: white;
+    text-align: center;
+}
+.header-text {
+    background-color: #174E70;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+   
+}
+.navigation-container {
+    background-color: #333;
+}
+.navigation-container nav {
+    /* display: flex; */
+    justify-content: center;
+    padding: 10px 20px;
+}
+.navigation-container nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.navigation-container nav ul li {
+    margin-left: 0px;
+}
+.navigation-container nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.navigation-container nav ul li a:hover {
+    background-color: #333;
+    color: #e7c3c3;
+}
+
+header h1 {
+    margin: 0;
+    padding: 30px;
+}
+
+.highlight {
+    color: #ffc107;
+}
+
+ 
+
+
+
+    
+main {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align:center ;
+    
+}
+
+.about-me h2{
+    background-color: #174E70;
+   
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Optional: add some space between rows */
+    padding: 10px;
+    
+}
+
+.text {
+   
+    padding: 20px;
+}
+
+.image img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    
+}
 
 
 
 
+
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.picsandtxt{
+    display: grid;
+    grid-template-columns: 550px 1fr;
+    gap: 40px;
+    max-width: 500px;
+    margin: 5 auto;
+    padding: 0 0px;
+
+}
+.picsandtxt img{
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    margin-top: 10px;
+    
+}
+
+
+.about{
+    padding: 5px;
+    margin-top: 0;
+    background-color: #174E70;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources ul li {
+    margin: 10px 0;
+}
+
+.resources ul li a {
+    color: #0056b3;
+    text-decoration: none;
+} */
+
+footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 4px solid #ffc107;
+    margin-top: 20px;
+}
 
