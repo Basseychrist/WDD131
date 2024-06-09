@@ -1,63 +1,159 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
+    box-sizing: border-box;
 }
 
-
+/* Header Styles */
 header {
-    display: flex;
-    flex-direction: column;
     background-color: #174E70;
     color: white;
     text-align: center;
+    align-content: center;
+    
 }
+
 .header-text {
-    background-color: #174E70;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-   
+    padding:30px;
+    max-height: 110px;
 }
+
 .navigation-container {
     background-color: #333;
+    padding: 19px;
 }
-.navigation-container nav {
-    /* display: flex; */
-    justify-content: center;
-    padding: 10px 20px;
-}
+
 .navigation-container nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
 }
-.navigation-container nav ul li {
-    margin-left: 0px;
-}
+
+
+
 .navigation-container nav ul li a {
     color: white;
     text-decoration: none;
-}
-.navigation-container nav ul li a:hover {
-    background-color: #333;
-    color: #e7c3c3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-header h1 {
-    margin: 0;
-    padding: 30px;
+.navigation-container nav ul li a:hover {
+    background-color: #fff;
+    color: #080808;
+    border-radius: 20px;
 }
 
 .highlight {
     color: #ffc107;
 }
 
- 
+.content ul{
+    margin-top: 120px;   
+}
+
+.content ul li{
+    margin-top: 10px;   
+}
+
+/* Main Content Styles */
+.grid-container {
+    display: grid;
+    
+    grid-template-columns: 1fr 250px;
+    gap: 40px;
+    padding: 20px;
+    
+}
+
+/* .card1{
+    grid-area: card1;
+   
+}
 
 
+.card2{
+    grid-area: card2;
+} */
 
- 
+
+.imgandtxt {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    text-align: center;
+}
+
+.content img, .flag img{
+height:100px;
+width: 100px;
+margin-top: 10px;
+}
+
+.imgandtxt p {
+    margin: 10px 0;
+}
+
+
+.card1  .card2{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.location h2 {
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.htwoabout, .h2resources {
+    text-align: center;
+    background-color: #2C3E50;
+    color: #fff;
+    margin: -10px -10px 10px -10px;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+}
+
+ .card2 .content {
+   
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1 .card2 ul {
+    padding: 0;
+    text-align: center;
+}
+
+.card1 .card2 li {
+    margin: 5px 0;
+}
+
+.card1 .card2 a {
+    color: #8E44AD;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+footer .highlight {
+    color: #F39C12;
+}
+
