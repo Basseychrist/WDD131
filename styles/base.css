@@ -66,22 +66,16 @@ header {
 /* Main Content Styles */
 .grid-container {
     display: grid;
-    
     grid-template-columns: 1fr 250px;
     gap: 40px;
     padding: 20px;
+    max-width: 1200px;
     
 }
 
-/* .card1{
-    grid-area: card1;
-   
+main{
+    max-width: 1200px;
 }
-
-
-.card2{
-    grid-area: card2;
-} */
 
 
 .imgandtxt {
