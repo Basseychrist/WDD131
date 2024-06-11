@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
@@ -13,11 +13,10 @@ header {
     color: white;
     text-align: center;
     align-content: center;
-    
 }
 
 .header-text {
-    padding:30px;
+    padding: 30px;
     max-height: 110px;
 }
 
@@ -32,10 +31,7 @@ header {
     padding: 0;
     display: flex;
     justify-content: space-between;
-
 }
-
-
 
 .navigation-container nav ul li a {
     color: white;
@@ -55,12 +51,12 @@ header {
     color: #ffc107;
 }
 
-.content ul{
-    margin-top: 120px;   
+.content ul {
+    margin-top: 120px;
 }
 
-.content ul li{
-    margin-top: 10px;   
+.content ul li {
+    margin-top: 10px;
 }
 
 /* Main Content Styles */
@@ -70,13 +66,11 @@ header {
     gap: 40px;
     padding: 20px;
     max-width: 1200px;
-    
 }
 
-main{
+main {
     max-width: 1200px;
 }
-
 
 .imgandtxt {
     display: flex;
@@ -85,18 +79,18 @@ main{
     text-align: center;
 }
 
-.content img, .flag img{
-height:100px;
-width: 100px;
-margin-top: 10px;
+.content img, .flag img {
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
 }
 
 .imgandtxt p {
     margin: 10px 0;
 }
 
-
-.card1  .card2{
+.card1,
+.card2 {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
@@ -110,7 +104,8 @@ margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.htwoabout, .h2resources {
+.htwoabout,
+.h2resources {
     text-align: center;
     background-color: #2C3E50;
     color: #fff;
@@ -119,8 +114,7 @@ margin-top: 10px;
     border-radius: 10px 10px 0 0;
 }
 
- .card2 .content {
-   
+.card2 .content {
     flex-direction: column;
     align-items: center;
 }
@@ -150,4 +144,3 @@ footer {
 footer .highlight {
     color: #F39C12;
 }
-
