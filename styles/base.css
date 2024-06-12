@@ -91,7 +91,7 @@ main {
 
 .card1,
 .card2 {
-    border: 1px solid #ccc;
+    border: 1px solid #333;
     border-radius: 10px;
     padding: 10px;
     background-color: #fff;
@@ -129,7 +129,7 @@ main {
 }
 
 .card1 .card2 a {
-    color: #8E44AD;
+    color: #174E70;
 }
 
 /* Footer Styles */
@@ -141,6 +141,4 @@ footer {
     font-size: 0.9em;
 }
 
-footer .highlight {
-    color: #F39C12;
-}
+
