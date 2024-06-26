@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Temple Album</title>
-    <meta name="description" content="This is a responsive temple album website. where author Develop responsive web pages that follow best practices and use valid HTML and CSS. Demonstrate proficiency with JavaScript language syntax. Use JavaScript to respond to events and dynamically modify HTML. This also contain an hamburger navigation menu with logo that's responsive">
-    <meta name="author" content=" Eno-obong Etim Bassey">
+    <meta name="description" content="This is a responsive temple album website where the author develops responsive web pages that follow best practices and use valid HTML and CSS. Demonstrate proficiency with JavaScript language syntax. Use JavaScript to respond to events and dynamically modify HTML. This also contains a hamburger navigation menu with a logo that's responsive">
+    <meta name="author" content="Eno-obong Etim Bassey">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -19,21 +19,33 @@
         <button id="menu"></button>
         <div class="navigation">
             <nav class="navbar">
-                <h1>Temple Album</h1>
+                <a href="#">Temple Album</a>
             </nav>
             <ul class="navlink">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+                <li><a href="#" onclick="updateHeading('Home')">Home</a></li>
+                <li><a href="#" onclick="updateHeading('Old')">Old</a></li>
+                <li><a href="#" onclick="updateHeading('New')">New</a></li>
+                <li><a href="#" onclick="updateHeading('Large')">Large</a></li>
+                <li><a href="#" onclick="updateHeading('Small')">Small</a></li>
             </ul>
         </div>
     </header>
 
     <main>
-        <h2>Home</h2>
+        <h1 id="main-heading">Home</h1>
         <div class="grid-container">
+            <figure>
+                <img src="images/san-diego-temple.jpeg" alt="Temple Image">
+                <figcaption>San Diego Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/san-diego-temple.jpeg" alt="Temple Image">
+                <figcaption>San Diego Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/san-diego-temple.jpeg" alt="Temple Image">
+                <figcaption>San Diego Temple</figcaption>
+            </figure>
             <figure>
                 <img src="images/san-diego-temple.jpeg" alt="Temple Image">
                 <figcaption>San Diego Temple</figcaption>
