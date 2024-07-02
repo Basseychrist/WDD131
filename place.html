@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places</title>
+    <meta name="description" content="">
+    <meta name="author" content="Eno-obong Etim Bassey">
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <!-- Link to JavaScript files -->
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lagos Nigeria</h1>
+    </header>
+    <main>
+        <!-- Responsive image for different screen sizes -->
+        <picture>
+            <source media="(min-width:768px)" srcset="images/lion-large-by-scale.webp" />
+            <img class="image-responsive" src="./images/lion-small-by-scale.webp" alt="Lion photo." />
+        </picture>
+        <!-- Section containing data information -->
+        <section class="information-section">
+            <h2>Data</h2>
+            <div>
+                <table>
+                    <tr>
+                        <td class="label">Area:&nbsp;</td>
+                        <td>1,171 sq km</td> <!-- Updated information -->
+                    </tr>
+                    <tr>
+                        <td class="label">Population:&nbsp;</td>
+                        <td>14,368,000</td> <!-- Updated information -->
+                    </tr>
+                    <tr>
+                        <td class="label">Capital:&nbsp;</td>
+                        <td>Lagos</td> <!-- Updated information -->
+                    </tr>
+                    <tr>
+                        <td class="label">Languages:&nbsp;</td>
+                        <td>Yoruba, English, Pidgin</td> <!-- Updated information -->
+                    </tr>
+                    <tr>
+                        <td class="label">Currency:&nbsp;</td>
+                        <td>Nigerian Naira</td> <!-- Updated information -->
+                    </tr>
+                    <tr>
+                        <td class="label">Timezone:&nbsp;</td>
+                        <td>UTC +1</td> <!-- Updated information -->
+                    </tr>
+                    <tr>
+                        <td class="label">Calling Code:&nbsp;</td>
+                        <td>+234</td> <!-- Updated information -->
+                    </tr>
+                    <tr>
+                        <td class="label">Internet TLD:&nbsp;</td>
+                        <td>.ng</td> <!-- Updated information -->
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <!-- Section containing weather information -->
+        <section class="climate-section">
+            <h2 class="climate-heading">Weather
+                <img class="climate-icon" src="./images/weather.svg" alt="Weather Icon">
+            </h2>
+            <table>
+                <tr>
+                    <td class="label">Temperature:&nbsp;</td>
+                    <td id="temperatureValue">10°C</td>
+                </tr>
+                <tr>
+                    <td class="label">Conditions:&nbsp;</td>
+                    <td>Partly Cloudy</td>
+                </tr>
+                <tr>
+                    <td class="label">Wind:&nbsp;</td>
+                    <td id="velocityValue">10 km/h</td>
+                </tr>
+                <tr>
+                    <td class="label">Wind Chill:&nbsp;</td>
+                    <td id="windChillValue">8°C</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="year"></span> Bassey Eno-obong Etim 🌸 Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
