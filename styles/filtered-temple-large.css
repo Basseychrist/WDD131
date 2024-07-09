@@ -1,0 +1,29 @@
+/* large view navigation ************************************/
+@media (min-width: 768px) {
+
+    header{
+        background-color: #3c0a64;
+        padding: 20px;
+    
+    
+    }
+
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+        display: flex; /* always show navigation for large screens */
+        justify-content: space-between;
+
+    }
+
+ 
+    .navlink{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    }
+}

@@ -1,0 +1,126 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation{
+display: none; /* initially hide navigation */
+flex-direction: column;
+background-color:#3c0a64;
+color: #fff;
+max-width: 1200px;
+margin: 1rem auto;
+gap: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+.navigation a{
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;  
+}
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.navigation.show {
+    display: flex;
+}
+
+.navbar{
+    font-size: 2rem;
+   
+}
+
+.navlink{
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+main h1, main h2{
+text-align: center;
+padding: 20px 0px 0px 0px;
+  
+    }
+
+
+/*
+FIGURE
+*/
+
+.temple-card {
+    text-align: center;
+    padding: 1rem;
+    background-color: #EFE9F4;
+    margin: 0.5rem;
+    border: 1px solid #7D6F86;
+  }
+  
+  .card-label {
+    font-weight: bold;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .temple-card img {
+    object-fit: cover;
+  }
+  
+
+
+
+/* Footer Styles  */
+footer {
+    background-color: #3C0A64;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
