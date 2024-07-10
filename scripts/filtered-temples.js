@@ -100,23 +100,23 @@ const ButtonSmall = document.querySelector("#button-small");
 const buttonHome = document.querySelector("#button-home");
 
 buttonOld.addEventListener("click", () => {
-TemplateCardscreate(temples.filter(temple => convertToDate(temple.dedicated).getFullYear() < 1900));
+  createTemplateCards(temples.filter(temple => convertToDate(temple.dedicated).getFullYear() < 1900));
 });
 
 buttonNew.addEventListener("click", () => {
-TemplateCardscreate(temples.filter(temple => convertToDate(temple.dedicated).getFullYear() > 2000));
+  createTemplateCards(temples.filter(temple => convertToDate(temple.dedicated).getFullYear() > 2000));
 });
 
 ButtonLarge.addEventListener("click", () => {
-TemplateCardscreate(temples.filter(temple => temple.area > 90000));
+  createTemplateCards(temples.filter(temple => temple.area > 90000));
 });
 
 ButtonSmall.addEventListener("click", () => {
-TemplateCardscreate(temples.filter(temple => temple.area < 10000));
+  createTemplateCards(temples.filter(temple => temple.area < 10000));
 });
 
 buttonHome.addEventListener("click", () => {
-TemplateCardscreate(temples);
+createTemplateCards(temples);
 });
 
 createTemplateCards(temples);
