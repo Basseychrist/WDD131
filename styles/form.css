@@ -1,97 +1,126 @@
-/* General Styles */
-body {
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
-
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+:root {
+    --primary-color: #0D5C63;
+    --secondary-color: #44A1A0;
+    --tertiary-color: #247B7B;
+    --light-color: #FFFFFA;
+    --dark-color: #343a40;
+  
   }
-header, footer {
-    background-color: #333;
+  
+  .container{
+    border: 1px solid #0f0e0e;
+    background-color:var(--tertiary-color);
+    border-radius: 16px;
+  }
+  
+  main {
+    height: 100%;
+    padding: 1rem;
+  }
+  
+  body {
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  h1 {
+    color: var(--light-color);
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  
+  input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0); 
+  }
+  
+  .stars {
+    justify-content: left;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .stars > label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+  }
+  
+  .stars > label:hover {
+    color: #000;
+  }
+  
+  .stars > label::before {
+    content: "\2606";
+  }
+  
+  .stars input:checked ~ label::before {
+    content: "\2605";
+  }
+  
+  /* Form Control */
+  .control {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .control select,
+  input[type="text"],
+  input[type="date"],
+  input[type="password"],
+  input[type="number"] {
+    padding: 1.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  
+  .form input[type="submit"] {
+   
+    color:var(--light-color) ;
+   background-color:var(--secondary-color) ;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  .form {
+    padding: 1rem;
+  }
+  
+  #post-reveiw:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  /*
+  FOOTER
+  */
+  
+  footer, header {
+    background-color: var(--dark-color);
     color: #fff;
     text-align: center;
     padding: 1rem;
-}
-
-
-
-form {
-    max-width: 600px;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-fieldset {
-    border: none;
-    padding: 0;
-}
-
-legend {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-input[type=text], input[type=date], textarea, select {
-    width: calc(100% - 12px);
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-/* Stars Rating */
-.stars {
-    display: flex;
-}
-
-.stars input[type="radio"] {
-    display: none;
-}
-
-.stars label {
-    font-size: 24px;
-    color: #ccc;
-    cursor: pointer;
-}
-
-.stars label:hover,
-.stars label:hover ~ label,
-.stars input:checked ~ label {
-    color: #ffbf00;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #161925;
-    color: #fdfffc;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.9em;
-}
+  }
+  
+  #lastModified {
+    font-size: small;
+  }
+  
+  #copyright {
+    font-size: large;
+  }

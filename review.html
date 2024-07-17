@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review Form</title>
-    <meta name="author" content="Eno-obong  Bassey">
-    <meta name="description" content="product review form where users can rate products and give feedback.">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review - Thanks For Submitting!</title>
+    <meta
+      name="description"
+      content="product review form where users can rate products and give feedback."
+    />
+    <meta name="author" content="Eno-obong Bassey" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/form.css">
-    <link rel="stylesheet" href="styles/form-large.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/form-large.css" />
     <script src="scripts/getdates.js" type="text/javascript" defer></script>
-    <script src="scripts/form.js" type="text/javascript" defer></script>
-</head>
-<body>
+    <script src="scripts/review.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="centered">Product Review</h1>
+    </header>
+    <main>
+      <div class="centered">
+        <h2>Done!</h2>
+        <p>Your review has been submitted. Thank you!</p>
+        <p>Number of reviews submitted: <span id="numberOfReviews"></span></p>
+      </div>
+    </main>
+    <footer>
+        <p>©<span id="year"></span> Bassey Eno-obong Etim 🌸 Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+  </body>  
+</html>
