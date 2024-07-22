@@ -1,0 +1,313 @@
+:root{
+    --footer-and-header-background-color: #161925;
+    --footer-and-header-text-color: #fdfffc;
+    --headings-nav-background-and-accents-color: #235789;
+    --nav-link-hover:#c1292e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #161925;
+    margin: 0;
+    background-color: #fdfffc;
+}
+
+
+.center { 
+    padding : 40px;
+    background-color:var(--footer-and-header-background-color);
+}
+.center h1{
+    color: var(--footer-and-header-text-color);
+    text-align: center;
+    padding-right: 50px;
+}
+
+#community{
+    margin-left:20px;
+
+}
+#home{
+    margin-left: 40px;
+    margin-top: 0px;
+}
+.logo-container img{ width: 50px;
+    height: 50px;
+   align-items: center;
+    margin: 5px 5px;}
+   
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+
+ }
+
+nav ul li {
+   list-style: none;
+   margin: 10px;
+
+}
+
+nav ul li a {
+     text-decoration: none;
+     color: var(--footer-and-header-text-color);
+     align-items: center;
+}
+
+a:hover{
+    padding: 20px;
+    background-color: var(--nav-link-hover);
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--nav-link-hover);
+    position: absolute;
+    top: 1rem;
+    right: 1rem; 
+    ;
+    
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.article-container{
+    margin:30px 50px ;
+    border: #161925 0.1px solid ;
+    border-radius: 2px;
+}
+
+section{
+    margin: 10px;
+}
+
+.logo-container{
+    display: none; /* initially hide navigation */
+    flex-direction: column;
+    background-color:var(--headings-nav-background-and-accents-color);
+    color: var(--footer-and-header-text-color);
+    width: 100%;
+    align-items: center;
+ 
+    }
+
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.logo-container.show {
+    display: flex;
+
+}
+
+
+
+h1{
+    margin-top: 10px;
+    font-size:xx-large;
+}
+
+h2{
+    top: 0px;
+    margin-top: 15px;
+    font-size: medium;
+}
+
+
+/* Footer Styles  */
+footer {
+    background-color: var(--footer-and-header-background-color);
+    color: var(--footer-and-header-text-color);
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9em;
+}
+
+
+
+.hero {
+    display: flex;
+    gap: 0px; /* Adjust the gap between images */
+    
+}
+
+.hero picture {
+    flex: 1; /* Equal width for both images */
+    max-width: 50%; /* Maximum width for desktop */
+}
+
+.hero img {
+    width: 100%; /* Ensure images fill their container */
+    height: 100%;
+}
+
+@media  screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack images vertically on mobile */
+    }
+
+    .hero picture {
+        max-width: 100%; /* Full width on mobile */
+    }
+}
+
+/* Additional CSS for Tips & Resources Page */
+.article-container {
+    margin: 30px 50px;
+    border: #161925 0.1px solid;
+    border-radius: 2px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.article-container h1 {
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+.article-container article {
+    margin-bottom: 20px;
+}
+
+.article-container h2 {
+    font-size: large;
+    margin-top: 15px;
+    color:var(--headings-nav-background-and-accents-color);
+}
+
+.article-container p,
+.article-container ul {
+    margin-top: 10px;
+    font-size: medium;
+    line-height: 1.6;
+}
+
+.article-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.article-container ul li {
+    margin-bottom: 5px;
+}
+
+.article-container a {
+    color: var(--headings-nav-background-and-accents-color);
+    text-decoration: none;
+}
+
+.article-container a:hover {
+    text-decoration: underline;
+}
+
+/* Additional CSS for Community Page */
+.article-container {
+    margin: 30px 50px;
+    border: #161925 0.1px solid;
+    border-radius: 2px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.article-container h1 {
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+.article-container article {
+    margin-bottom: 20px;
+}
+
+.article-container h2 {
+    font-size: large;
+    margin-top: 15px;
+    color: #235789;
+}
+
+.article-container p,
+.article-container ul {
+    margin-top: 10px;
+    font-size: medium;
+    line-height: 1.6;
+}
+
+.article-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.article-container ul li {
+    margin-bottom: 5px;
+}
+
+.article-container a {
+    color: #235789;
+    text-decoration: none;
+}
+
+.article-container a:hover {
+    text-decoration: underline;
+}
+
+.article-container .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #235789;
+    color: #fdfffc;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.article-container .button:hover {
+    background-color: #c1292e;
+}
+
+/* Form Styles */
+#discussionForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#discussionForm label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: medium;
+}
+
+#discussionForm input,
+#discussionForm textarea {
+    padding: 10px;
+    font-size: medium;
+    border: 1px solid #161925;
+    border-radius: 2px;
+}
+
+#discussionForm button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #235789;
+    color: #fdfffc;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#discussionForm button:hover {
+    background-color: #c1292e;
+}

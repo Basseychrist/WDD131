@@ -3,11 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="The site aims to create a central hub for individuals interested in sustainable living, offering information on best practices, eco-friendly techniques, and resources for adopting sustainable habits. It will also include a community forum for members to share their experiences and ask for advice.">
     <title>Document</title>
+    <meta name="author" content=" Eno-obong Bassey">
+    <link rel="stylesheet" href="styles/sustainable-living-network.css">
+    <link rel="stylesheet" href="styles/sustainable-living-network-large.css">
+    <script src="scripts/sustainable-living-network.js" defer> </script>
+    <script src="scripts/getdates.js" defer> </script>
+    <script src="scripts/smooth-rolling.js" defer></script>
 
 </head>
 <body>
+    <header>
+        
+        <div class="center">
+            <h1 >Sustainable Living Network</h1>
+        </div>
+        <button id="menu"></button>
+        <div class="logo-container">    
+            <img src="images/tree-logo.webp"  alt="">
+            <nav>
+                <ul>
+                    <li><a id="home"href="#">Home</a></li>
+                    <li><a href="tips-and-resources.html">Tips & Resources</a></li>
+                    <li><a id="community" href="community.html">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <!-- Responsive image for different screen sizes -->
+            <picture>
+                <source media="(min-width:768px)" srcset="images/nature-man.webp" loading="lazy"/>
+                <img class="image-responsive" src="./images/nature-man.webp" alt="nature picture." loading="lazy" />  
+            </picture>
+            <picture>
+                <source media="(min-width:768px)" srcset="images/nature.webp" loading="lazy"/>
+                <img class="image-responsive" src="./images/nature.webp" alt="nature photo." loading="lazy" />
+                
+            </picture>
+
+        </div>
+
+        <section class=" article-container">
+            <section>
+                <h1>Introduction to Sustainable Living</h1>
+                <p>
+                    Sustainable living, in simple terms means using fewer resources to make sure there are enough for the future. It’s a way of life that helps protect the environment for our future generations.
+
+                    It involves making conscious choices today, that have a positive impact on the environment, society, and the economy. It is a lifestyle that prioritizes reducing one’s environmental impact and preserving natural resources for future generations.
+                </p>
+                <h1>Importance</h1>
+                <p>
+                    Living sustainably is important because,
+                    It reduces your environmental impact by consuming fewer resources and producing less waste.
+                    It involves making conscious choices that promote a healthy and balanced lifestyle while minimizing harm to the environment.
+                    It is essential for the long-term survival of our planet and our species. Remember there is no Plant B!
+                </p>
+
+                <h1>Benefits</h1>
+                <h2>Environmental Benefits of living sustainably</h2>
+                <p>
+                    By adopting sustainable living practices, you can help reduce the negative impact of human activities on the environment. Sustainable living practices such as reducing waste, conserving resources, and embracing renewable energy can help reduce greenhouse gas emissions, air and water pollution, and deforestation.
+
+                    E.g. reducing your use of single-use plastic products such as bags, straws, and bottles can significantly help reduce the amount of plastic waste that ends up in our oceans and landfills.
+                    
+                    Similarly, conserving water by taking shorter showers, fixing leaks, and using water-efficient appliances can help us reduce the amount of water that is wasted.
+                </p>
+
+                <h2>Economic Advantages of Sustainable Living</h2>
+                <p>
+                    Sustainable living can also have economic benefits. Here are a few, worth mentioning:
+
+                    By reducing your consumption of resources, you can save money on your utility bills and other expenses. E.g. by using energy-efficient appliances and light bulbs, you can help reduce your electricity bill.
+                    Similarly, using public transportation or carpooling can help reduce your transportation costs.
+                    Sustainable living practices can create new job opportunities in the market, in areas such as renewable energy, waste management, and sustainable agriculture.
+                    By supporting sustainable businesses and products, you can help create a healthier & a more sustainable economy.
+                </p>
+
+                <h2>Social and Ethical Significance of Sustainable Living</h2>
+                <p>
+                    Sustainable living also has social and ethical significance. By adopting sustainable living practices, you can help promote social justice and reduce inequality.
+
+                    Sustainable living practices such as supporting fair trade and organic products can help promote ethical and sustainable business practices.
+
+                    Furthermore, sustainable living can help promote a healthier and more balanced lifestyle. For example, by choosing to walk or bike instead of driving, you not only workout & take care of your body but also reduce your carbon footprint at the same time.
+
+                    Similarly, choosing to eat a plant-based diet can help improve your health and reduce your impact on the environment.
+                </p>
+
+            </section>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>©<span id="year"></span> Bassey Eno-obong Etim 🌸 Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
     
 </body>
 </html>

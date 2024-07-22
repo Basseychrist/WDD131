@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px)  {
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+
+    .logo-container {
+        display: flex !important; /* ensure it overrides the default display: none */
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: var(--headings-nav-background-and-accents-color);
+        color: var(--footer-and-header-text-color);
+        max-width: 100%; /* Ensure full width */
+        margin: 0; /* Remove margins */
+        
+    }
+
+    nav {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        
+     
+
+        
+    }
+
+    
+
+}
