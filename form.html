@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Product Review Form</title>
-        <meta name="author" content="Eno-obong  Bassey">
+        <meta name="author" content="Eno-obong Bassey">
         <meta name="description" content="product review form where users can rate products and give feedback.">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/form.css">
         <link rel="stylesheet" href="styles/form-large.css">
         <script src="scripts/getdates.js" type="text/javascript" defer></script>
@@ -20,37 +20,34 @@
         </header>
         <main>
           <div class="container">
-            <!-- this form element would typically contain input elements (such as text fields, checkboxes, or buttons) that allow users to enter data and submit it to the specified URL using the "get" method. -->
             <form action="review.html" method="get" class="form">
-              <div class="control">
+              <div class="control required">
                 <label for="product">Product:</label>
                 <select id="product" name="product" required>
                   <option value="" disabled selected>Select a Product...</option>
-                  <!-- Options will be added here dynamically -->
                 </select>
               </div>
-              <!-- Start radio buttons -->
-              <div class="control">
-                <label>Overall Rating</label>
-                <div class="stars">
-                  <input type="radio" id="fivestar" name="rating" value="5" required>
-                  <label for="fivestar"></label>
-                  <input type="radio" id="fourstar" name="rating" value="4" required>
-                  <label for="fourstar"></label>
-                  <input type="radio" id="threestar" name="rating" value="3" required>
-                  <label for="threestar"></label>
-                  <input type="radio" id="twostar" name="rating" value="2" required>
-                  <label for="twostar"></label>
-                  <input type="radio" id="onestar" name="rating" value="1" required>
-                  <label for="onestar"></label>
-                </div>
+
+              <div class="control required">
+                <label class="control required">Overall Rating</label>
               </div>
-              <!-- Date of installation -->
-              <div class="control">
+              <div class="stars">
+                <input type="radio" id="fivestar" name="rating" value="5" required>
+                <label for="fivestar"></label>
+                <input type="radio" id="fourstar" name="rating" value="4" required>
+                <label for="fourstar"></label>
+                <input type="radio" id="threestar" name="rating" value="3" required>
+                <label for="threestar"></label>
+                <input type="radio" id="twostar" name="rating" value="2" required>
+                <label for="twostar"></label>
+                <input type="radio" id="onestar" name="rating" value="1" required>
+                <label for="onestar"></label>
+              </div>
+              
+              <div class="control required">
                 <label for="installationDate">Date of installation</label>
-                <input type="date" name="installationDate" id="installationDate">
+                <input type="date" name="installationDate" id="installationDate" required>
               </div>
-              <!-- Checkbox -->
               <fieldset class="control">
                 <legend>Which features did you find useful in the product (Check all that apply)</legend>
                 <div>
@@ -70,22 +67,18 @@
                   <label for="design">Design</label>
                 </div>
               </fieldset>
-              <!-- Textarea -->
               <div class="control">
                 <label for="review">Written Review (Optional)</label>
                 <textarea id="review" name="review" rows="4" cols="50"></textarea>
               </div>
-              <!-- Your name -->
               <div class="control">
                 <label for="userName">Your Name (Optional)</label>
                 <input type="text" id="userName" name="userName">
               </div>
-              <!-- Submit button -->
               <div class="control">
                 <input id="post-review" type="submit" value="Post Review">
               </div>
             </form>
-            
           </div>
         </main>
         <footer>

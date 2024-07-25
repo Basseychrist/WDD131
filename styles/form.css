@@ -39,7 +39,6 @@ footer {
   text-align: center;
 }
 
-/* Rest of your CSS rules */
 .container {
   border: 1px solid #0f0e0e;
   background-color: var(--tertiary-color);
@@ -75,7 +74,6 @@ footer {
   content: "\2605";
 }
 
-/* Form Control */
 .control {
   margin-bottom: 1rem;
   display: flex;
@@ -109,4 +107,9 @@ input[type="number"] {
 #post-review:hover {
   background-color: var(--primary-color);
   color: #fff;
+}
+
+.required label::after {
+  content: " *";
+  color: var(--dark-color);
 }
